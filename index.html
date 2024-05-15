@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Guru Services</title>
+  <meta name="title" content="Guru Services">
+  <meta name="description" content=" Chiller seller website">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon_io/favicon.ico" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - custom font link
+  -->
+  <link rel="stylesheet" href="./assets/font/font.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/loading.svg">
+  <link rel="preload" as="image" href="./assets/images/loading-circle.svg">
+<style>
+  :root{
+
+  } 
+  .speaker-on {
+  display: inline-block;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.speaker-off {
+  display: none;
+}
+
+  
+  body{
+     /* background-image: url(/assets/images/bigchil.png);  */
+    background-repeat: no-repeat;
+    object-fit:contain;
+    background-size:contain;
+   background-color: #00bfff51;
+   backdrop-filter: blur(1px);
+  }
+.dark-mode{
+background-color: black;
+color:#44c1d7;
+}
+
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  
+  padding: 20px;
+  background-color: #a29d9d;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(13, 72, 222, 0.822);
+  
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  color: #000000;
+
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #aa6fd7;
+  border-radius: 4px;
+}
+
+textarea.form-control {
+  resize: vertical; /* Allow vertical resize */
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #26e11d;
+}
+
+
+
+/* .container{
+  margin:0 auto;
+  padding-left: 20%;
+  padding-right: 20%;
+
+} */
+/* .wrapper-h2{
+  padding-left: 20%;
+  padding-right: 20%;
+} */
+
+</style>
+</head>
+
+<body class="active" id="top">
+  
+  <!-- 
+    -#PRELOADING
+  -->
+  
+  
+  <div class="loading" data-loading>
+    <img src="./assets/images/loading.svg" width="55" height="55" alt="loading" class="img">
+    <img src="./assets/images/loading-circle.svg" width="70" height="70" alt="" class="circle">
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="80" height="100" alt="Richard home">
+      </a>
+    
+ 
+    <input type="checkbox" class="l" id="themeToggle" onchange="darkTheme()">
+    <input type="checkbox" id="checkboxInput">
+    <label for="checkboxInput" class="toggleSwitch">
+
+<div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+<path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
+<path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
+</svg></div>
+
+<div class="mute-speaker"><svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+<path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
+<path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
+</svg></div>
+
+    </label>
+
+<audio  id ="myAudio" src="music.mp3"></audio>
+
+
+
+  </div>
+  
+      
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <img src="./assets/images/menu.svg" width="17" height="17" alt="menu icon">
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="140" height="40" alt="Guru home" class="img">
+            GURU SERVICES
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <span class="span one"></span>
+            <span class="span two"></span>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#gallery" class="navbar-link" data-nav-link>Gallery</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#services" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link" data-nav-link>Contact us</a>
+          </li>
+
+        </ul>
+
+        <button class="login-btn">
+          <img src="./assets/images/user.svg" width="21" height="21" alt="user icon">
+
+          <span class="span">Login</span>
+        </button>
+
+        <p class="navbar-title">My Address</p>
+
+        <address class="navbar-text">
+          No 11, Crashed Road, Esi Anna Nagar, Avadi,Chennai-600062
+        </address>
+
+        <p class="navbar-text">
+          Urgent issue? call us at
+          <a href="tel:8085613846" class="contact-link">044-26378956</a>
+        </p>
+
+      </nav>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+     
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="home"> 
+        <div class="container">
+
+         
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Guru Services</h1>
+            
+            <div class="wrapper h2">
+              <strong class="strong" data-letter-effect>Voltas Limited Authorised System</strong>
+              <strong class="strong" data-letter-effect>Solution Provider Sales and Services</strong>
+              <strong class="strong" data-letter-effect>Services Dealer For Commercial</strong>
+              <strong class="strong" data-letter-effect>Airconditioning Business Group</strong>
+            </div>
+
+         
+            <!-- <div class="audio-control-section">
+              audio on
+              <audio id="backgroundMusic" src="music.wav" preload="auto" loop></audio>
+              <label class="switch">
+                <input type="checkbox" id="toggleButton">
+                <span class="slider round"></span>
+              </label>
+            </div> -->
+            
+            <div class="audio-control-section">
+              <span id="speakerIcon" class="speaker-on">🔊</span>
+              <audio id="backgroundMusic" src="music.mp3" type="audio/mp3" preload="auto" loop></audio>
+              <label class="switch">
+                <input type="checkbox" id="toggleButton">
+                <span class="slider round"></span>
+              </label>
+            </div>
+            
+            
+            <div class="partners">
+              <img src="/assets/images/voltas.png" height="100px"width="100px" alt=""> <br>
+              <img src="/assets/images/Tata_logo.svg.png" height="100px"  width="100px">
+            </div>
+
+        </div>
+
+       
+
+      </section>
+
+  
+      
+
+
+      <!-- 
+        - #GALLERY
+      -->
+
+      <!-- <section class="section gallery" id="gallery"> 
+        <div class="container">
+
+          <ul class="gallery-list">
+
+            <li class="gallery-item" data-reveal>
+
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+                  <img src="./assets/images/airchiller.webp" width="450" height="625" loading="lazy" alt="The Drunken"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h6">
+                    <a href="#" class="card-title"> Voltas Air Chillers</a>
+                  </h3>
+
+                  <span class="card-tag">Air Cooled Chiller</span>
+                </div>
+
+                <a href="#" class="btn-icon">
+                  <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
+                    alt="arrow-forward icon">
+                </a>
+
+              </div>
+
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+                  <img src="./assets/images/air1.png" width="450" height="625" loading="lazy"
+                    alt="Air Cooled Chiller" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h6">
+                    <a href="#" class="card-title">Voltas Air  Chillers</a>
+                  </h3>
+
+                  <span class="card-tag">Products</span>
+                </div>
+
+                <a href="#" class="btn-icon">
+                  <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
+                    alt="arrow-forward icon">
+                </a>
+
+              </div>
+
+            </li>
+
+            <li class="gallery-item" data-reveal>
+
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+                  <img src="./assets/images/water1.png" width="450" height="625" loading="lazy" alt="Leaping Lizard"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h6">
+                    <a href="#" class="card-title"> Voltas Water  Chiller</a>
+                  </h3>
+
+                  <span class="card-tag">Voltas</span>
+                </div>
+
+                <a href="#" class="btn-icon">
+                  <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
+                    alt="arrow-forward icon">
+                </a>
+
+              </div>
+
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+                  <img src="./assets/images/water.png" width="450" height="625" loading="lazy" alt="Juan More Taco"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h6">
+                    <a href="#" class="card-title">Voltas chillers</a>
+                  </h3>
+
+                  <span class="card-tag">Water Cooled</span>
+                </div>
+
+                <a href="#" class="btn-icon">
+                  <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
+                    alt="arrow-forward icon">
+                </a>
+
+              </div>
+
+            </li>
+
+            <li class="gallery-item" data-reveal>
+
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+                  <img src="./assets/images/pack.png" width="450" height="625" loading="lazy" alt="Goldilox Bagels"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h6">
+                    <a href="#" class="card-title">Package Units</a>
+                  </h3>
+
+                  <span class="card-tag">Voltas</span>
+                </div>
+
+                <a href="#" class="btn-icon">
+                  <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
+                    alt="arrow-forward icon">
+                </a>
+
+              </div>
+
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+                  <img src="./assets/images/pack2.png" width="450" height="625" loading="lazy" alt="Cookie Monstah"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h6">
+                    <a href="#" class="card-title">Voltas Package Units</a>
+                  </h3>
+
+                  <span class="card-tag">for industries</span>
+                </div>
+
+                <a href="#" class="btn-icon">
+                  <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
+                    alt="arrow-forward icon">
+                </a>
+
+              </div>
+
+            </li>
+
+            <li class="gallery-item" data-reveal>
+
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+                  <img src="./assets/images/vrf.png" width="450" height="625" loading="lazy"
+                    alt="Divine Pastabilities" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h6">
+                    <a href="#" class="card-title">Voltas Vrf Unit</a>
+                  </h3>
+
+                  <span class="card-tag">Vrf Units</span>
+                </div>
+
+                <a href="#" class="btn-icon">
+                  <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
+                    alt="arrow-forward icon">
+                </a>
+
+              </div>
+
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+                  <img src="./assets/images/vrf1.png" width="450" height="625" loading="lazy"
+                    alt="The Lockhart Bar" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h6">
+                    <a href="#" class="card-title">Voltas Vrf</a>
+                  </h3>
+
+                  <span class="card-tag">Products</span>
+                </div>
+
+                <a href="#" class="btn-icon">
+                  <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
+                    alt="arrow-forward icon">
+                </a>
+
+              </div>
+
+            </li>
+
+          </ul>
+
+          <a href="#service" class="scroll-down">
+            <img src="./assets/images/scroll-down.svg" width="40" height="66" loading="lazy" alt="mouse scroll">
+          </a>
+
+          <img src="./assets/images/gallery-shape.svg" width="220" height="78" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CATEGORY
+      -->
+
+      <!-- <section class="section category" aria-label="photography category">
+        <div class="container">
+
+          <ul class="category-list">
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">Air chillers,</h3>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 690;">
+                  <img src="./assets/images/air1.png" width="600" height="690" loading="lazy" alt="Landscape"
+                    class="img-cover">
+                </figure>
+
+              </a>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">Water chillers,</h3>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 690;">
+                  <img src="./assets/images/water1.png" width="600" height="690" loading="lazy" alt="Model"
+                    class="img-cover">
+                </figure>
+
+              </a>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">vrf units,</h3>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 690;">
+                  <img src="./assets/images/vrf.png" width="600" height="690" loading="lazy" alt="Street"
+                    class="img-cover">
+                </figure>
+
+              </a>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">Duct Fabrication,</h3>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 690;">
+                  <img src="./assets/images/Sheet-Metal-Duct-Fabrication.png" width="600" height="690" loading="lazy" alt="Product"
+                    class="img-cover">
+                </figure>
+
+              </a>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">Pipe Fabrication,</h3>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 690;">
+                  <img src="./assets/images/pipefab.png" width="600" height="690" loading="lazy" alt="Fashion"
+                    class="img-cover">
+                </figure>
+
+              </a>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">Pump Fabrication,</h3>
+
+                <figure class="card-banner img-holder" style="--width: 700; --height: 690;">
+                  <img src="./assets/images/pump2.jpg" width="600" height="690" loading="lazy" alt="Film"
+                    class="img-cover">
+                </figure>
+
+              </a>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">Package units,</h3>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 690;">
+                  <img src="./assets/images/pack.png" width="600" height="690" loading="lazy" alt="Architecture"
+                    class="img-cover">
+                </figure>
+
+              </a>
+            </li>
+
+          
+          </ul>
+
+        </div>
+      </section>
+
+
+      
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <!-- <section class="section about" id="about" aria-label="about me"> 
+        <div class="container">
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title" data-reveal="right">
+              Hi. I’m <br>
+              A Dharani Raj Gurupatham
+            </h2>
+
+            <div class="wrapper has-before" data-reveal="right">
+
+              <p class="section-text">
+                A passionate
+                <em class="em">Businessman</em>
+                who are working in this field for
+                <em class="em">last 10 years.</em>
+                I’m ready to give you my best.
+              </p>
+
+              <img src="./assets/images/signature.png" width="250" height="250" loading="lazy" alt="signature"
+                class="img" >
+               
+
+            </div>
+
+          </div>
+
+          <figure class="about-banner" data-reveal="left">
+
+            <div class="img-holder has-before" style="--width: 102; --height: 100;">
+              <img src="./assets/images/logo.png" width="100" height="100" loading="lazy" alt="Riachard Ryan"
+                class="img-cover">
+            </div>
+
+            <img src="./assets/images/hero-shape.svg" width="178" height="178" loading="lazy" alt=""
+              class="shape shape-1">
+
+            <img src="./assets/images/about-shape-2.svg" width="659" height="653" loading="lazy" alt=""
+              class="shape shape-2">
+
+          </figure>
+
+          <img src="./assets/images/about-shape-3.svg" width="239" height="232" loading="lazy" alt=""
+            class="shape shape-3">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <!-- <section class="section service" id="service" aria-labelledby="service-lable"> 
+
+        <p class="section-subtitle container" id="service-lable">My Services</p>
+
+        <ul class="service-list">
+
+          <li data-reveal>
+            <div class="service-card container">
+
+              <img src="./assets/images/air1.png" width="300" height="300" loading="lazy" alt="Air Chiller"
+                class="img">
+
+              <div>
+                <h3 class="h3 card-title">Chillers</h3>
+
+                <p class="card-subtitle">
+                  We are dealers of Voltas Chillers
+                </p>
+              </div>
+
+              <a href="#" class="btn-icon" aria-label="See more">
+                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                  <path d="M0 10H41" stroke="white" stroke-width="2" />
+                  <path d="M33 1L41.9 10.2727L33 19" stroke="white" stroke-width="2" />
+                </svg>
+              </a>
+
+            </div>
+          </li>
+
+          <li data-reveal>
+            <div class="service-card container">
+
+              <img src="./assets/images/service-2.jpg" width="100" height="100" loading="lazy" alt="Event Organiser"
+                class="img">
+
+              <div>
+                <h3 class="h3 card-title">Installation</h3>
+
+                <p class="card-subtitle">
+                  Professional installation.
+                </p>
+              </div>
+
+              <a href="#" class="btn-icon" aria-label="See more">
+                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                  <path d="M0 10H41" stroke="white" stroke-width="2" />
+                  <path d="M33 1L41.9 10.2727L33 19" stroke="white" stroke-width="2" />
+                </svg>
+              </a>
+
+            </div>
+          </li>
+
+          <li data-reveal>
+            <div class="service-card container">
+
+              <img src="./assets/images/out.jpg" width="340" height="380" loading="lazy" alt="Product Marketing"
+                class="img">
+
+              <div>
+                <h3 class="h3 card-title">Service</h3>
+
+                <p class="card-subtitle">
+                  We provide service for chillers
+                </p>
+              </div>
+
+              <a href="#" class="btn-icon" aria-label="See more">
+                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                  <path d="M0 10H41" stroke="white" stroke-width="2" />
+                  <path d="M33 1L41.9 10.2727L33 19" stroke="white" stroke-width="2" />
+                </svg>
+              </a>
+
+            </div>
+          </li>
+
+          <li data-reveal>
+            <div class="service-card container">
+
+              <img src="./assets/images/pipefab.png" width="300" height="380" loading="lazy" alt="Videography"
+                class="img">
+
+              <div>
+                <h3 class="h3 card-title">Fabrication</h3>
+
+                <p class="card-subtitle">
+                  We also do Fabrication work
+                </p>
+              </div>
+
+              <a href="#" class="btn-icon" aria-label="See more">
+                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                  <path d="M0 10H41" stroke="white" stroke-width="2" />
+                  <path d="M33 1L41.9 10.2727L33 19" stroke="white" stroke-width="2" />
+                </svg>
+              </a>
+
+            </div>
+          </li>
+
+        </ul>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PORTFOLIO
+      -->
+
+      <!-- <section class="section portfolio" id="portfolio" aria-labelledby="portfolio-label"> 
+        <div class="container">
+
+          <div class="portfolio-list">
+
+            <div class="wrapper">
+
+              <h2 class="h2 section-title" id="portfolio-label" data-reveal>Our Works.</h2>
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 700; --height: 605;">
+                  <img src="./assets/images/out.jpg" width="300" height="300" loading="lazy" alt="Shoe Promo"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">Site:</a>
+                  </h3>
+
+                  <p class="card-tag">Product</p>
+                </div>
+
+                <a href="#" class="btn-icon" aria-label="See more">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                    <path d="M0 10H41" stroke="black" stroke-width="2" />
+                    <path d="M33 1L41.9 10.2727L33 19" stroke="black" stroke-width="2" />
+                  </svg>
+                </a>
+
+              </div>
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 700; --height: 1091;">
+                  <img src="./assets/images/pack5.png" width="700" height="1091" loading="lazy" alt="Wedding Shot"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">Site:</a>
+                  </h3>
+
+                  <p class="card-tag">Description</p>
+                </div>
+
+                <a href="#" class="btn-icon" aria-label="See more">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                    <path d="M0 10H41" stroke="black" stroke-width="2" />
+                    <path d="M33 1L41.9 10.2727L33 19" stroke="black" stroke-width="2" />
+                  </svg>
+                </a>
+
+              </div>
+
+            </div>
+
+            <div class="wrapper">
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 700; --height: 1000;">
+                  <img src="./assets/images/water3.png" width="700" height="1000" loading="lazy" alt="Fashion Show"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">Site</a>
+                  </h3>
+
+                  <p class="card-tag">Description</p>
+                </div>
+
+                <a href="#" class="btn-icon" aria-label="See more">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                    <path d="M0 10H41" stroke="black" stroke-width="2" />
+                    <path d="M33 1L41.9 10.2727L33 19" stroke="black" stroke-width="2" />
+                  </svg>
+                </a>
+
+              </div>
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 700; --height: 850;">
+                  <img src="./assets/images/service-2.jpg" width="700" height="850" loading="lazy" alt="Jumbo Barger"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">Site</a>
+                  </h3>
+
+                  <p class="card-tag">Description</p>
+                </div>
+
+                <a href="#" class="btn-icon" aria-label="See more">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                    <path d="M0 10H41" stroke="black" stroke-width="2" />
+                    <path d="M33 1L41.9 10.2727L33 19" stroke="black" stroke-width="2" />
+                  </svg>
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <img src="./assets/images/portfolio-shape.svg" width="286" height="232" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <!-- <footer class="footer"> 
+
+    <div class="footer-top section" id="contact">
+      <div class="container">
+
+        <p class="section-subtitle" data-reveal>Contact Us</p>
+
+        <h2 class="h2 section-title" data-reveal>
+          WHat's Stopping you, Get a Quote now.
+        </h2>
+
+        <a href="#" class="btn-icon" data-reveal>
+          <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy" alt="arrow-forward icon">
+        </a>
+
+        <img src="./assets/images/aboutman.png" width="159" height="176" loading="lazy" alt="images"
+          class="abs-img abs-img-1" data-reveal>
+
+
+        <img src="./assets/images/air2.png" width="265" height="275" loading="lazy" alt="images"
+          class="abs-img abs-img-2" data-reveal>
+
+        <img src="./assets/images/control.png" width="303" height="272" loading="lazy" alt="images"
+          class="abs-img abs-img-3" data-reveal>
+
+        <img src="./assets/images/chill.png" width="200" height="175" loading="lazy" alt="images"
+          class="abs-img abs-img-4" data-reveal>
+         
+          <div class="contact-form">
+            <form action="https://formspree.io/f/xyyrvzag" method="POST">
+              <div class="form-group">
+                <label for="uname">Your name:</label>
+                <input type="text"id="uname" name="Clientname" placeholder="name" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="Number">Your Number:</label>
+                <input type="text"id="Number" name="Number" placeholder="number" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Your email:</label>
+                <input type="email"id="email" name="email" placeholder="email" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Your message:</label>
+                <textarea name="Message"id="message" class="form-control" placeholder="subject" required></textarea>
+              </div>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+          
+
+          <!-- your other form fields go here -->
+  
+
+     
+        
+          
+        <!-- <img src="./assets/images/footer-shape.svg" width="185" height="134" loading="lazy" alt="" class="shape"> -->
+
+      </div>
+    </div>
+
+    <!-- <div class="footer-bottom"> 
+      <div class="container">
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="40" height="40" loading="lazy" alt="Guru home">
+        </a>
+        
+        
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">Fa.</a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">Insta.</a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">Tw.</a>
+          </li>
+
+        </ul>
+
+        <p class="copyright">Made with love</p>
+
+      </div>
+    </div>
+
+    <div class="footer-bg has-before">
+      <img src="./assets/images/footer-bg.jpg" width="1920" height="1135" loading="lazy" alt="photography"
+        class="img-cover">
+    </div>
+    <audio id="backgroundMusic" src="music.mp3" preload="auto" loop></audio>
+    <button id="toggleButton" onclick="toggleAudio()">Toggle Audio</button>
+    
+    
+  </footer>
+
+ 
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>0%</a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+ 
+  <script>
+// Get the audio element
+var backgroundMusic = document.getElementById('backgroundMusic');
+
+// Get the toggle button element
+var toggleButton = document.getElementById('toggleButton');
+
+// Function to toggle audio state
+function toggleAudio() {
+  if (backgroundMusic.paused) {
+    backgroundMusic.play();
+    toggleButton.textContent = 'Audio Off';
+  } else {
+    backgroundMusic.pause();
+    toggleButton.textContent = 'Audio On';
+  }
+}
+
+// Event listener for button click
+toggleButton.addEventListener('click', toggleAudio);
+
+//soearker
+// Get the necessary elements
+
+ 
+function darkTheme(){
+  var element= document.body;
+  element.classList.toggle("dark-mode");
+}
+
+
+
+const checkboxInput = document.getElementById('checkboxInput');
+  const audio = document.getElementById('myAudio');
+  const speaker = document.querySelector('.speaker');
+  const muteSpeaker = document.querySelector('.mute-speaker');
+
+  // Add event listener to the checkbox input
+  checkboxInput.addEventListener('change', function() {
+    if (this.checked) {
+      // Play audio
+      audio.play();
+      // Show the speaker icon and hide the mute speaker icon
+      speaker.style.display = 'block';
+      muteSpeaker.style.display = 'none';
+    } else {
+      // Pause audio
+      audio.pause();
+      // Hide the speaker icon and show the mute speaker icon
+      speaker.style.display = 'none';
+      muteSpeaker.style.display = 'block';
+    }
+  });
+
+  </script>
+  <audio autoplay loop muted >
+    <source src="music.wav" type="audio/" >
+
+    Your browser does not support the audio element.
+  </audio>
+
+
+
+</body>
+
+</html>

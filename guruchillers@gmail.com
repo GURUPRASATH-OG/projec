@@ -1,0 +1,8 @@
+guruchillers@gmail.com
+Password
+471FFC19975253F95C3293818BD922B4781C
+Copy
+Server
+smtp.elasticemail.com
+Port
+2525
